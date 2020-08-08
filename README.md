@@ -62,7 +62,9 @@ for instructions and the project rubric.
 ## Implementation
 
 In this project, It is aimed to decrease the cross track error(CTE). CTE is the term that explains how far the ego vehicle from the lane center. The higher CTE means the higher error. This error is controlled by using PID control. The tuning of the PID parameters has the crucial importance. Because each term has to do their jobs. For example, P term is the proportional term which scales the error it can be tuned according to the needs. It directly affects the response time. 
-The I term is the integral term which sums the error area and mostly controls the stability. However, this makes the system has an steady error and slower. In this part D term(derivation) takes into the account. 
+The I term is the integral term which sums the error area and mostly controls the stability. However, this makes the system has an steady error and slower. In this part D term(derivation) takes into the account.
+
+In this project and I select the PID parameters manual and also I use the saturation for integral latching. To increase the smoothness, Twiddle, anti wind-up or combination of those could be implemented.
 
 ## Hints!
 
