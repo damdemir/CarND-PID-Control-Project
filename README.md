@@ -59,6 +59,11 @@ More information is only accessible by people who are already enrolled in Term 2
 of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/e8235395-22dd-4b87-88e0-d108c5e5bbf4/concepts/6a4d8d42-6a04-4aa6-b284-1697c0fd6562)
 for instructions and the project rubric.
 
+## Implementation
+
+In this project, It is aimed to decrease the cross track error(CTE). CTE is the term that explains how far the ego vehicle from the lane center. The higher CTE means the higher error. This error is controlled by using PID control. The tuning of the PID parameters has the crucial importance. Because each term has to do their jobs. For example, P term is the proportional term which scales the error it can be tuned according to the needs. It directly affects the response time. 
+The I term is the integral term which sums the error area and mostly controls the stability. However, this makes the system has an steady error and slower. In this part D term(derivation) takes into the account. 
+
 ## Hints!
 
 * You don't have to follow this directory structure, but if you do, your work
